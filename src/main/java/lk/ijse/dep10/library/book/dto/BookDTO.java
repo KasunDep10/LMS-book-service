@@ -22,7 +22,7 @@ public class BookDTO implements Serializable {
     @NotBlank(message = "Author can't be empty")
     @Pattern(regexp = "^[A-Za-z ]+$", message = "Invalid author name")
     private String author;
-    @NotBlank(message = "Copies can't be null")
+//    @NotBlank(message = "Copies can't be null")
     @PositiveOrZero(message = "Copies can't be negative")
     private Integer copies;
 }
